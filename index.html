@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerobrass | Innovación en Instrumentos de Viento MIDI</title>
+    <!-- Tailwind CSS para utilidades rápidas -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- Archivo CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-black font-sans antialiased overflow-x-hidden">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter flex items-center gap-2">
+                <span class="w-8 h-8 gold-gradient rounded-full flex items-center justify-center">
+                    <i class="fas fa-wind text-white text-sm"></i>
+                </span>
+                AEROBRASS
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide uppercase" id="nav-links">
+                <a href="#inicio" class="hover-gold transition-colors">Inicio</a>
+                <a href="#objetivos" class="hover-gold transition-colors">Objetivos</a>
+                <a href="#galeria" class="hover-gold transition-colors">Galería</a>
+                <a href="#convenios" class="hover-gold transition-colors">Convenios</a>
+                <a href="#contacto" class="hover-gold transition-colors">Contacto</a>
+            </div>
+            <button class="md:hidden text-black focus:outline-none" id="mobile-menu-btn">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="min-h-screen flex items-center pt-20 px-6 section-fade">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h1 class="text-6xl md:text-8xl font-bold leading-none tracking-tighter">
+                    EL SILENCIO <br> <span class="text-gold-gradient">ES TU MÚSICA.</span>
+                </h1>
+                <p class="text-gray-600 text-xl max-w-md font-light leading-relaxed">
+                    Instrumentos de viento MIDI diseñados para la libertad creativa. Practica, ensaya y produce en cualquier lugar sin interrupciones.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#objetivos" class="px-8 py-4 bg-black text-white rounded-full font-bold hover:bg-gold transition-all duration-300 transform hover:scale-105">
+                        Conocer más
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -z-10 w-full h-full bg-gold/10 blur-3xl rounded-full translate-x-10 translate-y-10"></div>
+                <img src="https://placehold.co/800x800/white/000000?text=AEROBRASS+MIDI+INSTRUMENT" alt="Instrumento Aerobrass" class="w-full rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Objetivos -->
+    <section id="objetivos" class="py-24 bg-black text-white px-6 section-fade">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 text-center">
+                <h2 class="text-gold text-sm font-bold uppercase tracking-[0.3em] mb-2">Nuestra Misión</h2>
+                <h3 class="text-4xl md:text-5xl font-bold tracking-tight">Innovación Sin Límites</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="p-8 border border-white/10 rounded-3xl hover:border-gold/50 transition-all group">
+                    <div class="w-12 h-12 gold-gradient rounded-2xl mb-6 flex items-center justify-center">
+                        <i class="fas fa-headphones-alt text-black text-xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Práctica Silenciosa</h4>
+                    <p class="text-gray-400 font-light leading-relaxed">
+                        Nuestros instrumentos te permiten conectar audífonos directamente. Ensaya a cualquier hora sin molestar a nadie.
+                    </p>
+                </div>
+
+                <div class="p-8 border border-white/10 rounded-3xl hover:border-gold/50 transition-all group">
+                    <div class="w-12 h-12 gold-gradient rounded-2xl mb-6 flex items-center justify-center">
+                        <i class="fas fa-microchip text-black text-xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Tecnología MIDI</h4>
+                    <p class="text-gray-400 font-light leading-relaxed">
+                        Compatibilidad total con DAWs y sintetizadores para una producción musical participativa y creativa.
+                    </p>
+                </div>
+
+                <div class="p-8 border border-white/10 rounded-3xl hover:border-gold/50 transition-all group">
+                    <div class="w-12 h-12 gold-gradient rounded-2xl mb-6 flex items-center justify-center">
+                        <i class="fas fa-users text-black text-xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Para Todo Músico</h4>
+                    <p class="text-gray-400 font-light leading-relaxed">
+                        Desde estudiantes del conservatorio hasta profesionales. Fomentamos el juego en cualquier género musical.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="galeria" class="py-24 px-6 bg-white section-fade">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 class="text-gold text-sm font-bold uppercase tracking-[0.3em] mb-2">Galería</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold tracking-tight">Visualizando el Sonido</h3>
+                </div>
+                <p class="max-w-xs text-gray-500 font-light italic">
+                    "Un vistazo a la ingeniería y el diseño detrás de cada pieza de Aerobrass."
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 h-[600px]">
+                <div class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-3xl group">
+                    <img src="https://placehold.co/800x1200/f3f3f3/d4af37?text=Prototipo+01" class="w-full h-full object-cover transition duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    <div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black/80 to-transparent w-full opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white font-bold">Diseño Ergonómico</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-3xl group">
+                    <img src="https://placehold.co/600x600/f3f3f3/000000?text=Detalle+MIDI" class="w-full h-full object-cover transition duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                </div>
+                <div class="relative overflow-hidden rounded-3xl group">
+                    <img src="https://placehold.co/600x600/000000/d4af37?text=Conectividad" class="w-full h-full object-cover transition duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                </div>
+                <div class="md:col-span-2 relative overflow-hidden rounded-3xl group">
+                    <img src="https://placehold.co/1200x600/f3f3f3/d4af37?text=Sesión+de+Ensayo" class="w-full h-full object-cover transition duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Convenios -->
+    <section id="convenios" class="py-24 bg-gray-50 px-6 section-fade">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-gold text-sm font-bold uppercase tracking-[0.3em] mb-6">Nuestras Alianzas</h2>
+            <p class="text-2xl font-light mb-16 max-w-2xl mx-auto text-gray-700">
+                Colaboramos con las instituciones musicales más prestigiosas para elevar el estándar educativo.
+            </p>
+            
+            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60">
+                <div class="flex flex-col items-center group">
+                    <div class="w-32 h-32 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all">
+                        <i class="fas fa-university text-6xl"></i>
+                    </div>
+                    <span class="mt-4 font-bold text-gray-800">COMEM</span>
+                    <p class="text-xs text-gray-400">Conservatorio de Música del<br>Estado de México</p>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <div class="w-32 h-32 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all">
+                        <i class="fas fa-graduation-cap text-6xl"></i>
+                    </div>
+                    <span class="mt-4 font-bold text-gray-800">Escuelas Independientes</span>
+                    <p class="text-xs text-gray-400">Alianzas para la educación privada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-24 px-6 section-fade">
+        <div class="max-w-4xl mx-auto bg-black rounded-[3rem] p-12 text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 gold-gradient blur-[120px] opacity-20 translate-x-1/2 -translate-y-1/2"></div>
+            
+            <div class="relative z-10 grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-4xl font-bold mb-6">¿Hablamos de música?</h3>
+                    <p class="text-gray-400 mb-8 font-light">
+                        Estamos interesados en colaborar con músicos, distribuidores y escuelas. Déjanos un mensaje.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-envelope text-gold"></i>
+                            <span>contacto@aerobrass.com</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-map-marker-alt text-gold"></i>
+                            <span>Estado de México, México</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="contact-form" class="space-y-4">
+                    <input type="text" placeholder="Nombre completo" class="w-full bg-white/5 border border-white/10 rounded-2xl p-4 focus:border-gold outline-none transition" required>
+                    <input type="email" placeholder="Correo electrónico" class="w-full bg-white/5 border border-white/10 rounded-2xl p-4 focus:border-gold outline-none transition" required>
+                    <textarea rows="4" placeholder="¿Cómo podemos ayudarte?" class="w-full bg-white/5 border border-white/10 rounded-2xl p-4 focus:border-gold outline-none transition" required></textarea>
+                    <button type="submit" class="w-full gold-gradient text-black font-bold py-4 rounded-2xl hover:scale-[1.02] transition transform active:scale-95">
+                        Enviar mensaje
+                    </button>
+                    <div id="success-msg" class="hidden text-gold text-sm text-center mt-2 animate-pulse">
+                        ¡Mensaje enviado con éxito! Nos contactaremos pronto.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-100 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+            <div class="text-xl font-bold tracking-tighter">AEROBRASS</div>
+            <div class="flex gap-6 text-gray-400">
+                <a href="#" class="hover:text-gold transition"><i class="fab fa-instagram text-xl"></i></a>
+                <a href="#" class="hover:text-gold transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                <a href="#" class="hover:text-gold transition"><i class="fab fa-linkedin-in text-xl"></i></a>
+            </div>
+            <p class="text-gray-400 text-sm">© 2024 Aerobrass. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Archivo JS Personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
